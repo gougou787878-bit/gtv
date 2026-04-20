@@ -1,0 +1,504 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 750px) {
+  .main-min {
+    display: none !important;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .main-pc {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: transparent url("/default/2023pc.png") 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.9);
+  }
+
+  .container {
+    margin: 0 80px;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .logo {
+    width: 180px;
+    height: auto;
+  }
+
+  .header .sound {
+    width: 20px;
+    height: 20px;
+    background: url("/default/soundpause.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .header .sound.pause {
+    width: 20px;
+    height: 20px;
+    background: url("/default/playicon.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  .text-img {
+    width: 520px;
+    height: 140px;
+    margin-top: 35vh;
+    background: left url("/default/tttslogan.png") no-repeat;
+    background-size: contain;
+  }
+
+  .rowBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 999;
+  }
+
+  .codeBox {
+    margin-top: 0px;
+    width: 160px;
+  }
+
+  .TGBox {
+    margin-left: 30px;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .TGBox img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+  }
+
+  .TGBox .ios-download-btn {
+    background: url("/default/ios_new.png") no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 50px;
+    display: flex;
+  }
+
+  .TGBox .and-download-btn {
+    background: url("/default/android_new.png") no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 50px;
+    display: flex;
+  }
+
+  .TGBox .creator-download-btn {
+    background: url("/default/creator_down.png") no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 50px;
+    display: flex;
+  }
+
+  .TGBox span {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 32px;
+    display: inline-block;
+  }
+
+  .TGBox a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  #code {
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    padding: 5px;
+  }
+
+  .code-text {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .tip {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 10px;
+  }
+
+  .background_bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .background_bg {
+    width: 100%;
+    height: 100%;
+    background: url("/default/2023phone.png") 50% 50% repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+
+  .main-pc {
+    display: none !important;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(24, 16, 26);
+  }
+
+  .main-min {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .logo {
+    width: 1.48rem;
+    height: 1.48rem;
+    background-size: contain;
+    margin: 8vh auto 0;
+  }
+
+  .mobile-phone-install {
+    text-align: center;
+  }
+
+  .mobile-phone-install .mobile-install-title {
+    height: 36px;
+    width: 180px;
+    margin: 40px auto 5px;
+    display: block;
+  }
+
+  .mobile-phone-install .mobile-install-content {
+    border-radius: 5px;
+    margin: 0 12px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .mobile-phone-install .mobile-install-content .tab-nav-box {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-phone-install .mobile-install-content .tab-nav-box .item {
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .mobile-phone-install .mobile-install-content .tab-nav-box .item:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  .mobile-phone-install .mobile-install-content .tab-nav-box .item:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .mobile-phone-install .mobile-install-content .tab-nav-box .active {
+    color: rgb(26, 26, 26);
+    background: rgb(255, 255, 255);
+  }
+  .mobile-phone-install .mobile-install-content .tab-content-box {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .mobile-phone-install .mobile-install-content .tab-content-box .item {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    transition: left 0.3s;
+  }
+  .mobile-phone-install .mobile-install-content .tab-content-box .active {
+    left: 0;
+  }
+  .mobile-phone-install .mobile-install-content .tab-content-box .item p {
+    text-align: left;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+
+  .mobile-logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px auto;
+    margin-top: 50px;
+  }
+  .mobile-fuli {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 3;
+  }
+  .mobile-fuli img {
+    width: 100px;
+    height: auto;
+  }
+
+  .mobile-logo1 img {
+    width: 80%;
+  }
+
+  .mobile-logo2 img {
+    width: 90%;
+  }
+
+  .mobile-logo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .mobile-logo-container .tip-text {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    padding: 20px 15px;
+  }
+  .mobile-logo-container .tip-text a {
+    color: red;
+  }
+
+  .mobile-logo-container .flex-box {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-download {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .mobile-download-button {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+
+  .join-tg-group {
+    width: 200px;
+    height: 44px;
+    margin: 30px auto 0;
+  }
+
+  .join-tg-group img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .mobile-download-button img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-img {
+    width: 6.8rem;
+    height: 1.35rem;
+    background-size: contain;
+    margin: 4vh auto 0;
+  }
+
+  .android-down {
+    width: 4rem;
+    height: 1.12rem;
+    background: url("/default/android_new.png") no-repeat;
+    background-size: contain;
+    margin: 16vh auto 0;
+  }
+
+  .android-down a {
+    display: block;
+    width: 100%;
+    height: 1.12rem;
+  }
+
+  .ios-down-liu {
+    width: 4rem;
+    height: 1.12rem;
+    background: url("/default/ios_new.png") no-repeat;
+    background-size: contain;
+    margin: 16vh auto 0;
+  }
+
+  .ios-down-liu a {
+    display: block;
+    width: 100%;
+    height: 1.12rem;
+  }
+
+  .min-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    animation: identifier 30s infinite linear;
+  }
+
+  @keyframes identifier {
+    0% {
+      background-position-x: 0%;
+    }
+
+    100% {
+      background-position-x: 100%;
+    }
+  }
+
+  .mask {
+    width: 100%;
+    height: 100%;
+    /*background: rgba(24, 25, 32, 0.9);*/
+    position: fixed;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+#background_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
+.background_bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.tg-btn {
+  padding: 0 15px;
+  height: 32px;
+  opacity: 0.95;
+  background: rgb(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.tg-btn img {
+  width: 0;
+  vertical-align: middle;
+  transition: 0.2s all;
+}
+
+.tg-btn:hover img {
+  width: 14px;
+}

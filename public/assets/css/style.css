@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: #ea2027;
+    --third-color: #ffffff;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.wrap-body {
+    max-width: 480px;
+    height: 100%;
+    margin: auto;
+}
+
+.swiper {
+    max-width: 480px;
+    height: 100%;
+}
+
+.picture-container .bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.picture-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: .55rem;
+    height: .55rem;
+    /* border: 2px solid #ffffff; */
+    margin: .7rem !important;
+    background-color: rgb(255, 255, 255);
+    opacity: unset !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(247 188 104);
+}
+
+.swiper-pagination-bullets {
+    /* right: 40px !important; */
+}
+.contact {
+    position: fixed;
+    top: 60%;
+    max-width: 480px;
+    margin: auto;
+    z-index: 99;
+    padding: 20px;
+}
+.addsp {
+    padding-top: .8rem;
+}
+.contact img {
+    width: 100%;
+}
+.con-area {
+    bottom: 8px;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.con-icon {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    width: 100%;
+}
+.icond {
+    width: 25%;
+    text-align: center;
+}
+.icond img {
+    width: 60%;
+} 
+.button-area {
+    position: fixed;
+    top: 87%;
+    max-width: 480px;
+    margin: auto;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-txt , .ios-txt , .webapp-txt {
+    text-align: center;
+    background-color: rgb(255 253 85);
+    width: 70%;
+    margin: auto;
+    padding: 13px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 27px;
+    border: 1.5px solid #000;
+}
+
+.setup-tips-container {
+    position: fixed;
+    top: 94%;
+    max-width: 480px;
+    margin: auto;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+#myPopup , #myPopup_ , #myPopup_message , #myPopup_copy{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+    background-color: rgb(0 0 0 / 81%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 480px;
+    margin: auto;
+}
+.contact-msg {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.txt-msg {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #5ea1ea;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 2rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #2729cd;
+}
+#myPopup.active , #myPopup_.active , #myPopup_message.active , #myPopup_copy.active{
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.contact-msg {
+    /* z-index: 0; */
+}
+.message-bg img {
+    width: 100%;
+    padding: 0 3vw;
+}
+
+.contact_ {
+    position: absolute;
+    top: 25%;
+}
+.g-icon img , .e-icon img , .c-icon img{
+    width: 95%;
+    padding: 0 2vw;
+    position: relative;
+}
+.c-txt {
+    position: absolute;
+    top: 6%;
+    color: #000;
+}
+.e-txt {
+    position: absolute;
+    top: 66%;
+    color: #000;
+}
+.cat-txt {
+    position: absolute;
+    top: 76%;
+    color: #000;
+}
+.tg1-txt {
+    position: absolute;
+    top: 6%;
+    color: #000;
+}
+.tg2-txt {
+    position: absolute;
+    top: 62%;
+    color: #000;
+}
+
+.c-txt , .e-txt , .cat-txt , .tg1-txt , .tg2-txt{
+    left: 25%;
+}
+
+.space {
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width:480px) {
+    .c-txt , .e-txt , .cat-txt , .tg1-txt , .tg2-txt{
+        left: 22%;
+    }
+    .contact {
+        top: 59%;
+    }
+    .button-txt , .ios-txt , .webapp-txt {
+        padding: 1.8vw;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .button-area {
+        top: 88%;
+    }
+    .button-txt {
+        width: 60%;
+    }
+    .setup-tips-container {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contact {
+        top: 54%;
+    }
+    .button-area {
+        top: 86%;
+    }
+    .setup-tips-container {
+       font-weight: 700;
+    }
+}
+
+
+

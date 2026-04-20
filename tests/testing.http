@@ -1,0 +1,81 @@
+### json请求 公公配置
+POST {{host}}/api/testing/test
+Content-Type: application/json
+
+
+### json请求 公公配置
+POST {{host}}/api/live/sendGift
+Content-Type: application/json
+
+{
+  "live_uid": "159563",
+  "gift_id": "133",
+  "gift_count": "1",
+  "type": ""
+}
+
+###
+
+### json请求 公公配置
+POST {{host}}/api/live/newEnterRoom
+Content-Type: application/json
+
+{
+  "version": "1.0.3",
+  "bundle_id": "tips.ks",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "811021f5bdbf236f8c95454e24b9b9fb",
+  "live_uid": 6505219,
+  "uid": 5682580
+}
+
+###
+
+### json请求 公公配置
+POST {{host}}/v2/mv/listForTag
+Content-Type: application/json
+
+{
+  "oauth_type": "ios",
+  "tag": "自拍"
+}
+
+###
+
+### json请求 任务配置
+POST {{host}}/v2/task/info
+Content-Type: application/json
+
+{
+  "version": "1.0.3",
+  "bundle_id": "tips.ks",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "811021f5bdbf236f8c95454e24b9b9fb"
+}
+
+###
+### json请求 任务领取
+POST {{host}}/v2/task/receive
+Content-Type: application/json
+
+{
+  "version": "1.0.3",
+  "bundle_id": "tips.ks",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "dd6537bf016a6c09741a95b5590275ca",
+  "id": "9"
+}
+
+###

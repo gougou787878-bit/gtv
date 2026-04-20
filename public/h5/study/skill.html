@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>工具推荐</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 0.13rem;
+    position: relative;
+  }
+
+  .back {
+    width: 0.1rem;
+    height: 0.25rem;
+    background: url(./images/back2@2x.png) no-repeat center;
+    background-size: contain;
+
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+  }
+
+  .head {
+    position: sticky;
+    background: #fff;
+    box-sizing: border-box;
+    top: 0;
+    text-align: center;
+    color: #000;
+    font-size: 0.18rem;
+    height: 0.435rem;
+    line-height: 0.435rem;
+    padding: 0 0.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .div_box {
+    width: 2.95rem;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: #72b9eb;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item {
+    width: 100%;
+    border-bottom: 0.005rem solid #e5e5e5;
+    padding: 0.16rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item>.left {
+    margin-right: 0.195rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app_icon {
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-bottom: 0.14rem;
+  }
+
+  .item>.right {
+    color: 0.16rem;
+    color: #8b8b8b;
+  }
+
+  .item>.right span {
+    color: #3a3a3a;
+  }
+
+  .type_ {
+    margin-bottom: 0.115rem;
+  }
+
+  .detail {
+    font-size: 0.14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+</style>
+<script>
+  var listDom = ''
+  var dataList = [
+    {
+      logo: "./images/1.png",
+      title: "爱剪辑",
+      difficulty: 4,
+      type: "视频剪辑",
+      content: "国内首款免费视频剪辑软件，菜鸟级，不需要专业剪辑知识。",
+      toolLink: "http://www.ijianji.com/"
+    },
+    {
+      logo: "./images/2.png",
+      title: "万兴神剪手",
+      difficulty: 4,
+      type: "视频剪辑",
+      content:
+        "入门级软件，国产免费，且被称为“被过于小看的软件之一”，符合国人使用习惯。",
+      toolLink: "https://www.shencut.com/"
+    },
+    {
+      logo: "./images/3.png",
+      title: "会声会影",
+      difficulty: 3,
+      type: "家庭型视频剪辑软件",
+      content:
+        "从捕获、剪接、转场、特效、覆叠、字幕、配乐到刻录，能全方位剪辑的家庭小电影。",
+      toolLink: "http://www.huishenghuiying.com.cn/"
+    },
+    {
+      logo: "./images/4.png",
+      title: "Adobe Premiere Pro",
+      difficulty: 4,
+      type: "专业视频剪辑",
+      content:
+        "从采集、剪辑、调色、美化音频、字幕添加、输出、DVD刻录，有一整套流程。 如果不需要很强大的特效，有此软件就够了。",
+      toolLink:
+        "https://www.adobe.com/cn/products/premiere/free-trial-download.html"
+    },
+    {
+      logo: "./images/5.png",
+      title: "Sony Vegas",
+      difficulty: 4,
+      type: "专业视频剪辑",
+      content:
+        "和PR差不多，比After Effects简单， 剪辑、特效、合成、Streaming 一气呵成， 优点是对音频的处理比PR强，可以做简单混音。",
+      toolLink: "https://www.vegascreativesoftware.com/us/"
+    },
+    {
+      logo: "./images/6.png",
+      title: "EDIUS",
+      difficulty: 3,
+      type: "视频剪辑",
+      content:
+        "界面友好，上手方便，对电脑配置要求也不高，有人打过比方，pre就好比xp，edius好比win7，两个都是操作系统，都好用。",
+      toolLink: "http://www.ediuschina.com/"
+    },
+    {
+      logo: "./images/7.png",
+      title: "AE",
+      difficulty: 4,
+      type: "特效剪辑软件",
+      content:
+        "AE主要是做特效的，用它剪片子超级麻烦。但有了插件，可以做出各种牛逼的特效。业内人士一般把Pr+AE当黄金搭档使用，Pr输出画面给AE，AE加上特效后再导回Pr。",
+      toolLink:
+        "https://www.adobe.com/cn/products/aftereffects/free-trial-download.html"
+    },
+    {
+      logo: "./images/8.png",
+      title: "大洋非编",
+      difficulty: 5,
+      type: "专业视频剪辑",
+      content:
+        "Premiere适合家庭和个人爱好，大洋是专业编辑机，适合电视台等大型机构。 另外大洋是国产软件，更符合中国人的制片习惯。",
+      toolLink: "http://www.dayang.com.cn/folder78/folder80/folder89/"
+    },
+    {
+      logo: "./images/9.png",
+      title: "Maya",
+      difficulty: 4,
+      type: "专业视频剪辑",
+      content:
+        "美国Autodesk公司出品的世界顶级三维动画软件应用对象是专业的影视广告、角色动画，电影特技等，可以说是电影级别的的高端制作软件。",
+      toolLink: "https://www.autodesk.com/products/maya/overview"
+    },
+    {
+      logo: "./images/10.png",
+      title: "Final Cut Pro",
+      difficulty: 4,
+      type: "专业视频剪辑",
+      content: "苹果土豪专用，功能和PR差不多",
+      toolLink: "https://xclient.info/s/final-cut-pro.html"
+    },
+    {
+      logo: "./images/11.png",
+      title: "快影",
+      difficulty: 4,
+      type: "手机视频剪辑软件",
+      content:
+        "基本功能有：画面比例调整、添加/删除、复制/剪贴、变速、倒放、旋转 以及20种以上滤镜，声音，和字幕添加...",
+      toolLink: "https://www.kuaishou.com/kuaiying"
+    },
+    {
+      logo: "./images/12.png",
+      title: "快剪辑",
+      difficulty: 3,
+      type: "手机视频剪辑软件",
+      content:
+        "“快剪辑”比较适合1分钟以内的视频精剪，快影更适合1分钟以上的视频剪辑。",
+      toolLink: "https://kuai.360.cn/home.html"
+    },
+    {
+      logo: "./images/13.png",
+      title: "剪映",
+      difficulty: 4,
+      type: "手机视频剪辑软件",
+      content:
+        "是一款好用的全能视频编辑剪辑应用。带有全面的剪辑功能，简洁好用，支持变速，多样滤镜效果，丰富曲库资源，快速即可上手...",
+      toolLink: "https://lv.ulikecam.com/"
+    }
+  ]
+  function xing(num) {
+    let a = ''
+    for (let i = 0; i < num; i++) {
+      a += '<img src="./images/xing@2x.png" />'
+    }
+    return a
+  }
+  dataList.forEach(function (item) {
+    listDom += `<li class="item">
+       <div class="left">
+         <div class="app_icon" style="background:url(${item.logo})  no-repeat;background-size: cover;"></div>
+         <div><a href="${item.toolLink}">
+            立即访问
+         </a></div>
+       </div>
+       <div class="right">
+          <p class="type_">名称: <span>${item.title}</span></p>
+          <p class="type_">难度: <span>${xing(item.difficulty)}</span></p>
+          <p class="type_">类型: <span>${item.type}</span></p>
+          <p class="detail">${item.content}</p>
+       </div>
+    </li>`
+  })
+</script>
+
+<body>
+
+  <ul class="div_box">
+    <script>
+      document.write(listDom)
+    </script>
+  </ul>
+</body>
+<script type="text/javascript">
+    // 計算rem單位
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+        dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+        dpr = window.top === window.self ? dpr : 1, //被iframe引用時，禁止縮放
+        dpr = 1,
+        scale = 1 / dpr,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+      docEl.dataset.dpr = dpr;
+      var metaEl = doc.createElement('meta');
+      metaEl.name = 'viewport';
+      metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+      docEl.firstElementChild.appendChild(metaEl);
+      var recalc = function () {
+        var width = docEl.clientWidth;
+        if (width / dpr > 750) {
+          width = 750 * dpr;
+        }
+        // 乘以100，px : rem = 100 : 1
+        docEl.style.fontSize = 100 * (width / 350) + 'px';
+      };
+      recalc()
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+</script>
+
+</html>

@@ -1,0 +1,514 @@
+### json请求 公公配置
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/home/getConfig
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "app_flag": "av",
+  "oauth_id": "629f4c602afb1679cdd5fec8064800d6"
+}
+### json请求 公公配置
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/users/getBaseInfo
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "app_flag": "av",
+  "oauth_id": "629f4c602afb1679cdd5fec8064800d6"
+}
+### json请求 用户视频列表
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/av/category
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c"
+}
+
+###
+### json请求 用户视频列表
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/av/feature
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c"
+}
+
+
+###
+### json请求 用户视频列表
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/av/homeByCat
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "cat": 58,
+  "page": 2
+}
+
+###
+###
+### json请求 用户视频列表
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+#POST {{host}}/api/av/hottest
+#POST {{host}}/api/av/latest
+POST {{host}}/api/av/avByCat
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "cat": "43",
+  "page": 1
+}
+
+###
+
+###
+### json请求  合集列表
+###   "live_uid": 5198911,
+###  "to_uid": 5682580
+###  811021f5bdbf236f8c95454e24b9b9fb  wo
+POST {{host}}/api/av/daily
+Content-Type: application/json
+
+{
+  "version": "1.0.3",
+  "bundle_id": "tips.ks",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "ios",
+  "oauth_id": "4F2F1EE6-3FF2-477A-83F2-F11A52D481BC"
+}
+
+###
+POST {{host}}/api/av/vip
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c"
+}
+
+###
+
+###
+POST {{host}}/api/av/rank
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "type": "like"
+}
+
+###
+
+###
+POST {{host}}/api/av/actorAll
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "type": "pinyin",
+  "name": "a",
+  "page": 1
+}
+
+###
+###
+POST {{host}}/api/av/actorList
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "type": "pinyin",
+  "name": "a",
+  "page": 1
+}
+
+###
+
+###
+POST {{host}}/api/av/actorSave
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "actor_id": "9"
+}
+
+###
+
+###
+POST {{host}}/api/av/mineActor
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "page": "1"
+}
+
+###
+
+###
+POST {{host}}/api/av/detail
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "id": "51723"
+}
+
+###
+POST {{host}}/api/av/scoreAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "id": "51723",
+  "score": "10"
+}
+
+###
+###
+POST {{host}}/api/av/detailRecommend
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "id": "51723",
+  "page": "2"
+}
+
+###
+
+
+###
+POST {{host}}/api/av/searchIndex
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "id": "10"
+}
+
+###
+###
+POST {{host}}/api/av/searchAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "word": "日韩",
+  "page": 0
+}
+
+###
+###
+POST {{host}}/api/av/filterAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "order": "",
+  "category": "",
+  "tag": "",
+  "page": 0
+}
+###
+POST {{host}}/api/av/tagAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "order": "",
+  "tag": "颜射",
+  "page": 0
+}
+
+###
+###
+###
+POST {{host}}/api/av/liking
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "id": "8"
+}
+
+###
+###
+POST {{host}}/api/av/mineAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "order": "id"
+}
+###
+###
+POST {{host}}/api/av/mineBuyAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "m3655205490246d108d2ff8dff77d5b96t",
+  "order": "id",
+  "page": 2
+}
+
+######
+POST {{host}}/api/av/actorWorks
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "actor_id": "3302",
+  "actor_name": "",
+  "order": "id",
+  "page": "1"
+}
+
+###
+######
+POST {{host}}/api/av/actorDetail
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "actor_id": "3302",
+  "actor_name": ""
+}
+
+###
+###
+
+######
+POST {{host}}/api/userbuy/buyAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "av_id": "51723"
+}
+
+###
+######
+POST {{host}}/api/userbuy/ticketAv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "av_id": "51722"
+}
+
+#########
+POST {{host}}/api/av/watching
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "1.0.3",
+  "channel": "",
+  "via": "",
+  "build_id": "",
+  "oauth_type": "android",
+  "oauth_new_id": "",
+  "oauth_id": "376a852e7d0a21c862fc9dd3f019eb3c",
+  "av_id": "51722"
+}
+
+###

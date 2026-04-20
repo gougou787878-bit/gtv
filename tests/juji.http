@@ -1,0 +1,71 @@
+### json请求 公公配置
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/usertopic/detail
+Content-Type: application/json
+
+{
+  "id": "2"
+}
+
+
+
+### 创建剧集
+POST {{host}}/api/usertopic/create
+Content-Type: application/json
+
+{
+  "title": "创建剧集",
+  "desp": "介绍",
+  "type": "都市剧情,直男攻略",
+  "area": "北美",
+  "tags": "SM,道具,中出",
+  "image": "asdjkhasjkdhk",
+  "year": "2012"
+}
+
+
+
+### 修改剧集的视频，用来排序
+POST {{host}}/api/usertopic/update
+Content-Type: application/json
+
+{
+  "topic_id": 2,
+  "mv_id": "28136,28137,28148,28142"
+}
+
+
+### 添加视频到剧集
+POST {{host}}/api/usertopic/add_video
+Content-Type: application/json
+
+{
+  "topic_id": 2,
+  "mv_id": "28155"
+}
+
+
+### 在剧集删除指定的视频
+POST {{host}}/api/usertopic/del_video
+Content-Type: application/json
+
+{
+  "topic_id": 2,
+  "mv_id": "28155"
+}
+
+
+
+
+
+
+### 创建剧集前，配置的数据
+POST {{host}}/api/usertopic/pre_config
+Content-Type: application/json
+
+
+
+

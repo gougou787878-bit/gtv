@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>月入上万不是梦</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  body {
+    background: #ec2626;
+  }
+
+  .text_box {
+    width: 3.2rem;
+    margin: 0.2rem auto;
+    border-radius: 0.18rem;
+    background: #fff6e9;
+    padding: 0.18rem;
+    box-sizing: border-box;
+  }
+
+  .left_text {
+    color: #ec2626;
+    font-size: 0.16rem;
+  }
+
+  .right_text {
+    color: #ff7512;
+    font-size: 0.12rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .list_box {
+    width: 100%;
+    margin-top: 0.2rem;
+    justify-content: space-evenly;
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .one_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user_name {
+    width: 0.5rem;
+    color: #ff7512;
+    font-size: 0.12rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .avatar {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-bottom: 0.08rem;
+    border-radius: 50%;
+    background: red;
+  }
+
+  .text_title {
+    color: #ff6100;
+    font-size: 0.16rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .bottom_text {
+    width: 100%;
+    border-radius: 0.05rem;
+    background: #ffedd2;
+    font-size: 0.12rem;
+    color: #ff7512;
+    padding: 0.1rem 0.14rem;
+    box-sizing: border-box;
+  }
+  .totg_btn{
+    width: 1.5rem;
+    height: 0.4rem;
+    margin: 0.1rem auto;
+    background: url('./image/totg.png') no-repeat center;
+    background-size: cover;
+  }
+  .buttom_btn{
+    font-size: 0.11rem;
+    color: #CCCCCC;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+</style>
+
+<body>
+<img src="./image/yrsw.png" alt="">
+<div class="text_box" style="display: none">
+  <div class="one_text">
+    <p class="left_text">他们已经赚钱</p>
+    <p class="right_text">上周打赏收入10W+钻石榜单</p>
+  </div>
+  <ul class="list_box">
+    <li>
+      <a href="mobileCode://person?uid=11752799">
+        <div class="avatar" style="background: url('./image/1.png') no-repeat center;background-size: cover;"></div>
+      </a>
+      <p class="user_name">进入主页更精彩</p>
+    </li>
+    <li>
+      <a href="mobileCode://person?uid=11723497">
+        <div class="avatar" style="background: url('./image/2.png') no-repeat center;background-size: cover;"></div>
+      </a>
+      <p class="user_name">国产精选</p>
+    </li>
+    <li>
+      <a href="mobileCode://person?uid=8896542">
+        <div class="avatar" style="background: url('./image/3.png') no-repeat center;background-size: cover;"></div>
+      </a>
+      <p class="user_name">酷酷野狼</p>
+    </li>
+    <li>
+      <a href="mobileCode://person?uid=12569909">
+        <div class="avatar" style="background: url('./image/4.png') no-repeat center;background-size: cover;"></div>
+      </a>
+      <p class="user_name">梦娜小宝贝</p>
+    </li>
+    <li>
+      <a href="mobileCode://person?uid=12914492">
+        <div class="avatar" style="background: url('./image/5.png') no-repeat center;background-size: cover;"></div>
+      </a>
+      <p class="user_name">现代硬币</p>
+    </li>
+  </ul>
+  <p class="text_title">马上成为快手创作者</p>
+  <div class="bottom_text">
+    比小视频更高的曝光量更丰厚的宏利，我们期待你的加入！
+  </div>
+</div>
+<a href="boluomncode://elink?url=https://lynnconway.me/boluomv">
+  <div class="totg_btn">
+  </div>
+</a>
+<p class="buttom_btn">加入群组一起讨论，一起走向成功</p>
+</body>
+<script type="text/javascript">
+  // 計算rem單位
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+            isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+            dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+            dpr = window.top === window.self ? dpr : 1, //被iframe引用時，禁止縮放
+            dpr = 1,
+            scale = 1 / dpr,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    docEl.dataset.dpr = dpr;
+    var metaEl = doc.createElement('meta');
+    metaEl.name = 'viewport';
+    metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+    docEl.firstElementChild.appendChild(metaEl);
+    var recalc = function () {
+      var width = docEl.clientWidth;
+      if (width / dpr > 750) {
+        width = 750 * dpr;
+      }
+      // 乘以100，px : rem = 100 : 1
+      docEl.style.fontSize = 100 * (width / 350) + 'px';
+    };
+    recalc()
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+  })(document, window);
+</script>
+
+</html>

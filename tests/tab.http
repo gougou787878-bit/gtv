@@ -1,0 +1,394 @@
+### json请求 公公配置
+#  "oauth_type": "ios",
+#  "oauth_new_id": "",
+#  "oauth_id": "10D0C0D5-26EE-4DEC-9167-08579CEE16DD"
+# "host": "http://vip.ksapi001.me:8080/114d7daffe70738210cdb08b40e97f75.php",
+POST {{host}}/api/tab/index
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+
+###
+###
+POST {{host}}/api/tab/category
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/listOfFollow
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/listOfLatest
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "page": "1"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/perfect
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "page": "1"
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/listOfHottest
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "page": "1"
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/listOfFeature
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "page": "1"
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/listOfTab
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "page": "1",
+  "tabId": 2
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/home
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/ranking/gv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+### json请求 获取视频精选
+POST {{host}}/api/drama/index
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+### json请求 获取视频精选
+POST {{host}}/api/drama/filtertopic
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/drama/getByType
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "type": "都市剧情"
+}
+
+
+
+### json请求 获取视频精选
+POST {{host}}/api/drama/getByTag
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "tag": "美乳"
+}
+### json请求 获取视频精选
+POST {{host}}/api/search/conf
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "2",
+  "tabId": 1
+}
+
+### json请求 获取视频精选40160
+POST {{host}}/api/mvnew/detail
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "id": "28149"
+}
+
+
+### json请求 获取视频精选40160
+POST {{host}}/api/userbuy/video
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "id": "28149"
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/detailRecommend
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "id": "28149"
+}
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/homeByCat
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "tabId": "2",
+  "page": 1
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/mvnew/filtermv
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "order": "",
+  "tag": "",
+  "is_fee": "",
+  "page": 1
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/search/mv
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "1",
+  "kwy": "萝莉"
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/search/topic
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "1",
+  "kwy": "超级"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/search/user
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "1",
+  "kwy": "萝莉"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/users/getBaseInfo
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "2",
+  "kwy": "萝莉"
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/users/followed
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "2",
+  "kwy": "萝莉",
+  "uid": 4995056
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/users/fans
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "2",
+  "kwy": "萝莉",
+  "uid": 272115
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/users/videos
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "1",
+  "kwy": "萝莉",
+  "uid": 4995056
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/users/personal
+Content-Type: application/json
+
+{
+  "page": "1",
+  "limit": "1",
+  "nickname": "萝莉"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/comments/list
+Content-Type: application/json
+
+{
+  "id": "18550",
+  "limit": "1",
+  "comment": "萝莉"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/mv/index
+Content-Type: application/json
+
+{
+  "id": "18550",
+  "limit": "1",
+  "comment": "萝莉"
+}
+
+### json请求 获取视频精选
+POST {{host}}/api/mv/tags
+Content-Type: application/json
+
+{
+  "id": "18550",
+  "limit": "1",
+  "comment": "萝莉"
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/mv/long
+Content-Type: application/json
+
+{
+  "id": "28238",
+  "limit": "1",
+  "comment": "萝莉"
+}
+
+
+### json请求 获取视频精选
+POST {{host}}/api/usertopic/detail
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "topic_id": "144"
+}
+
+###
+
+### json请求 获取视频精选
+POST {{host}}/api/usertopic/like_topic
+Content-Type: application/json
+
+{
+  "bundle_id": "tips.ks",
+  "version": "5.2.0",
+  "oauth_type": "android",
+  "oauth_id": "841085653484bd0594eaef8dba15c6b8",
+  "uid": "14115107"
+}
+
+###

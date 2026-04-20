@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="0c9b42e310c7047b6aa23922dbe49581">
+    <meta name="referrer" content="same-origin">
+    <!-- cache control -->
+    <meta http-equiv="Pragma" content="no-cache,no-store,must-revalidate" />
+    <meta http-equiv="Cache-Control"
+        content="Cache-Control: no-store, no-cache, max-age=0, must-revalidate, proxy-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css?v=5">
+    <link rel="stylesheet" href="/assets/mobile/androidModal.css">
+    <title>GTV(GTVapp)专注于提供国内、日韩、欧美最新最全GV资源，原创同性视频，各大同性影视资源，经典同性影视电影等各种优质成人视频观看。<?php echo date("Y-m-d H:") ?></title>
+    <meta name="keywords" content="GTV，全球同志资源发源地，日更千部，十万同志大片随心看/APP安卓版/IOS版/官方下载站/GV+看片 <?php echo $m_url; ?>">
+    <meta name="description"
+          content="GTV，GV，动漫，耽美，耽改剧，钙片，Gay，中字，剧情，国产，日韩，欧美，SM，调教，性虐，性奴，同志，男同，基佬，精牛，肌肉男，熊熊恋，熊猴恋，出柜，拳交，打桩机，边缘控制，彩虹旗，小蓝，blued，淡蓝，鸟洞，极限暴露，高清，制服，吃瓜，最新，最全，内射，中文，原创，精品，每日推荐，日本，韩国，耽美
+GTV，无比的GayV视觉盛宴，全球同志资源发源地，日更千部，十万同志大片随心看/APP安卓版/IOS版/官方下载站/GV+一同看片 <?php echo $m_url; ?>">
+    <link rel="Shortcut Icon" href="/favicon.ico">
+</head>
+
+<body>
+    <div class="wrap-body" id="blur">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="picture-container">
+                        <img class="bg" src="/assets/images/img.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture-container">
+                        <img class="bg" src="/assets/images/img-6.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture-container">
+                        <img class="bg" src="/assets/images/img-7.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="contact">
+            <div class="con-area">
+                <img class="bg" src="/assets/images/img-1.png" alt="">
+                <div class="con-icon">
+                    <div class="icond" onclick="togglee()">
+                        <img class="icon" src="/assets/images/img-2.png" alt="">
+                        <div>商务联络</div>
+                    </div>
+                    <div class="icond">
+                        <a id="tg-contact">
+                            <img class="icon" src="/assets/images/img-3.png" alt="">
+                            <div>加群畅聊</div>
+                        </a>
+                    </div>
+                    <div class="icond">
+                        <img class="icon" src="/assets/images/img-4.png" alt="" id="tip-adviser">
+                        <div>安装说明</div>
+                    </div>
+                    <div class="icond" onclick="toggle()">
+                        <img class="icon" src="/assets/images/img-5.png" alt="">
+                        <div>找到我们</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-area">
+            <p class="button-txt">安卓版下载</p>
+            <p class="ios-txt">iOS下载</p>
+            <p class="webapp-txt">网页版APP</p>
+        </div>
+        <div class="setup-tips-container">
+            <p class="tip">*下载后开启飞行模式安装*</p>
+        </div>
+
+    </div>
+
+    <div id="myPopup">
+        <div class="contact-msg">
+            <div class="message-bg">
+                <img src="/assets/images/img-8.png" alt="" />
+            </div>
+            <div class="contact_">
+                <a  class="btn_down" id="btn_down" onclick="downloadApp()">
+                    <div class="g-icon">
+                        <img src="/assets/images/c-1.png" alt="" />
+                        <div class="c-txt">
+                            <h4>官网地址</h4>
+                            <p><?php echo $m_url; ?></p>
+                        </div>
+                    </div>
+                </a>
+<!--                <div class="e-icon space" onclick="copyToClipboard()">-->
+<!--                    <img src="/assets/images/c-2.png" alt="" />-->
+<!--                    <div class="e-txt">-->
+<!--                        <h4>地址邮箱</h4>-->
+<!--                        <p class="addsp">guanfangyouxiang112@gmail.com</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <!--<a id="github-link">
+                    <div class="c-icon space">
+                        <img src="/assets/images/u-1.png" alt="" />
+                        <div class="cat-txt">
+                            <h4>官网地址</h4>
+                            <p>ghtv.club</p>
+                        </div>
+                    </div>
+                </a>-->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myPopup_">
+        <div class="contact-msg">
+            <div class="message-bg">
+                <img src="/assets/images/img-8.png" alt="" />
+            </div>
+            <div class="contact_">
+                <a id="tg-contact-link-1">
+                    <div class="g-icon">
+                        <img src="/assets/images/c-4.png" alt="" />
+                        <div class="tg1-txt">
+                            <h4>商务联络1</h4>
+                            <p>@xiaolanshangwu</p>
+                        </div>
+                    </div>
+                </a>
+<!--                <a id="tg-contact-link-2">-->
+<!--                    <div class="e-icon space">-->
+<!--                        <img src="/assets/images/c-4.png" alt="" />-->
+<!--                        <div class="tg2-txt">-->
+<!--                            <h4>商务联络2</h4>-->
+<!--                            <p>@guangxi1112</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+            </div>
+        </div>
+    </div>
+    
+    <div id="myPopup_message">
+        <div class="txt-msg">
+            请在手机端打开安装
+        </div>
+    </div>
+
+    <div id="myPopup_copy">
+        <div class="txt-msg">
+            复制成功
+        </div>
+    </div>
+
+    
+
+
+    <div class="android-modal" id="platform-list">
+        <div class="header">
+            <div class="android-modal-arrow" data-type="1"><img src="/assets/mobile/back-black.png" alt=""></div>
+            <div class="title" id="show-platform-tips">安装包报毒解决方案</div>
+            <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content_">
+            <div class="platform-item" data-src="/assets/mobile/cell1-detail.jpg"><img src="/assets/mobile/cell1.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell2-detail.jpg"><img src="/assets/mobile/cell2.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell3-detail1.jpg"
+                 data-src2="/assets/mobile/cell3-detail2.jpg"><img src="/assets/mobile/cell3.png" alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell4-detail.jpg"><img src="/assets/mobile/cell4.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell5-detail.jpg"><img src="/assets/mobile/cell5.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell6-detail.jpg"><img src="/assets/mobile/cell6.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell7-detail.jpg"><img src="/assets/mobile/cell7.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell8-detail.jpg"><img src="/assets/mobile/cell8.png"
+                                                                                        alt=""></div>
+            <div class="platform-item" data-src="/assets/mobile/cell9-detail.jpg"><img src="/assets/mobile/cell9.png"
+                                                                                        alt=""></div>
+        </div>
+    </div>
+    
+    <div class="android-modal two" id="platform-detail">
+        <div class="header">
+            <div class="android-modal-arrow" data-type="2"><img src="/assets/mobile/back-black.png" alt=""></div>
+            <div class="title">安装包报毒解决方案</div>
+            <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content_">
+            <img class="modal-common-img" alt="">
+            <img class="modal-common-img-2" alt="">
+        </div>
+    </div>
+    
+    <div class="android-modal two" id="ios-detail">
+        <div class="header">
+            <div class="android-modal-arrow" data-type="3"><img src="/assets/mobile/back-black.png" alt=""></div>
+            <div class="title">IOS安装引导</div>
+            <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content_">
+            <img class="modal-common-img" src="/assets/mobile/doc-ios-1.jpeg">
+        </div>
+    </div>
+
+
+
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+
+    
+    let tgLink = "<?php echo $group; ?>";
+
+    //link telegram contact
+    let tgContactLink1 = "https://t.me/xiaolanshangwu";
+    let tgContactLink2 = "https://t.me/guangxi1112";
+    let emailAddress = "guanfangyouxiang112@gmail.com";
+    let githubLink = "https://github.com/"
+    let affCode = "<?php echo $share ?>"; // 邀请码
+
+
+    $('#tg-contact').attr('href', tgLink);
+    $('#tg-contact-link-1').attr('href', tgContactLink1);
+    $('#tg-contact-link-2').attr('href', tgContactLink2);
+    //$('#github-link').attr('href', githubLink);
+    
+    $('.button-area').attr('data-clipboard-text', affCode);
+    new ClipboardJS('.button-area')
+
+    const getDeviceInfo = () => {
+        const userAgent = navigator.userAgent.toLowerCase()
+        let isPc = Boolean(userAgent.match(/mobile|android|iphone/i)) === false
+        let isMobile = Boolean(userAgent.match(/mobile|android|iphone/i))
+        let isIos = Boolean(userAgent.match(/iphone|ipad/i))
+        let isAndroid = Boolean(userAgent.match(/android|mobile|pad/i) && Boolean(userAgent.match(/ipad/i)) === false && Boolean(userAgent.match(/mac/i)) === false)
+
+        if (screen.availWidth >= 1024 && isAndroid) {
+            //安卓平板 视为pc端
+            isPc = true
+            isMobile = false
+            isAndroid = false
+        }
+
+        return {isPc, isMobile, isIos, isAndroid}
+    }
+    const {isPc, isMobile, isIos, isAndroid} = getDeviceInfo()
+
+    if(isIos){
+        $('.button-txt').hide();
+        $('.webapp-txt').hide();
+        $("#tip-adviser").on('click', function () {
+            $('#ios-detail').fadeIn().css('display', 'flex');
+        })
+    }else if(isAndroid) {
+        $('.ios-txt').hide();
+        $("#tip-adviser").on('click', function () {
+            $('#platform-list').fadeIn().css('display', 'flex');
+        })
+    } else if (isPc) {
+        $('.ios-txt').hide();
+        $("#tip-adviser").on('click', function () {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle("active");
+            var myPopup_message = document.getElementById("myPopup_message");
+            myPopup_message.classList.toggle("active");
+
+            $( "#myPopup_message" ).click(function() {
+                $(this).removeClass("active");
+            });
+        })
+    }
+    
+
+    $('.platform-item').on('click', function () {
+        const imgSrc = $(this).data('src');
+        const imgSrc2 = $(this).data('src2');
+        const platformDetail = $('#platform-detail')
+        platformDetail.find('.modal-common-img').attr('src', imgSrc)
+        if (imgSrc2 !== "" || imgSrc2 !== undefined) {
+            platformDetail.find('.modal-common-img-2').attr('src', imgSrc2)
+        }
+        let src = platformDetail.find('.modal-common-img-2').attr('src')
+        if (src) {
+            platformDetail.find('.modal-common-img-2').show()
+        } else {
+            platformDetail.find('.modal-common-img-2').hide()
+        }
+        platformDetail.fadeIn().css('display', 'flex');
+
+        
+    })
+
+    $('.android-modal-arrow').on('click', function () {
+        const type = $(this).data('type')
+        if (type === 1) {
+            $('#platform-list').fadeOut()
+        }
+        if (type === 2) {
+            $('#platform-detail').fadeOut()
+            const platformDetail = $('#platform-detail');
+            platformDetail.find('.modal-common-img').attr('src', '');
+            platformDetail.find('.modal-common-img-2').attr('src', '')
+        }
+        if (type === 3) {
+            $('#ios-detail').fadeOut();
+        }
+    })
+    
+
+    // link android & ios
+    let config = {
+        apkDownUrl : "<?php echo $version_and; ?>",
+        iosDownBaseUrl : '<?php echo $version_ios_pwa;?>',
+        webappLink : '<?php echo $web_app_url;?>',
+    }
+
+    $('.button-txt').on('click', function(){
+        if(isIos){
+            downapp_ios();
+        }
+        else{
+            downapp_android();
+        }
+    });
+    $('.ios-txt').on('click', function(){
+        if(isIos){
+            downapp_ios();
+        }
+        else{
+            downapp_android();
+        }
+    });
+
+    $('.webapp-txt').on('click', function(){
+        setTimeout(function () {
+            location.href = config.webappLink;
+        }, 200);
+    });
+
+    function downloadApp(){
+        if(isIos){
+            downapp_ios();
+        }
+        else{
+            //downapp_android();
+            navigator.clipboard.writeText(affCode).then(() => {
+                var blur = document.getElementById("blur");
+                blur.classList.toggle("active");
+                var myPopup_copy = document.getElementById("myPopup_copy");
+                myPopup_copy.classList.toggle("active");
+
+                $( "#myPopup_copy" ).click(function() {
+                    $(this).removeClass("active");
+                });
+            });
+        }
+    }
+
+    function downapp_ios(){
+        setTimeout(function () {
+            location.href = config.iosDownBaseUrl;
+        }, 200);
+    }
+    function downapp_android(){
+        setTimeout(function () {
+            //e.preventDefault()
+            $.ajax({
+                url: '/index.php?a=stat',
+                success: function () {
+                    window.location.href = config.apkDownUrl;
+                },
+                error: function () {
+                    window.location.href = config.apkDownUrl;
+                }
+            });
+        }, 200);
+    }
+        
+
+    let swiper = new Swiper(".mySwiper1", {
+        spaceBetween: 50,
+        direction: "vertical",
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+
+    function togglee() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var myPopup_ = document.getElementById("myPopup_");
+        myPopup_.classList.toggle("active");
+
+        $( "#myPopup_" ).click(function() {
+            $(this).removeClass("active");
+        });
+    }
+
+    function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var myPopup = document.getElementById("myPopup");
+        myPopup.classList.toggle("active");
+
+        $( "#myPopup" ).click(function() {
+            $(this).removeClass("active");
+        });
+    }
+
+
+    function copyToClipboard() {
+        navigator.clipboard.writeText(emailAddress).then(() => {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle("active");
+            var myPopup_copy = document.getElementById("myPopup_copy");
+            myPopup_copy.classList.toggle("active");
+
+            $( "#myPopup_copy" ).click(function() {
+                $(this).removeClass("active");
+            });
+        });
+    }
+
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHR2S1NWLQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FHR2S1NWLQ');
+    </script>
+</body>
+
+</html>

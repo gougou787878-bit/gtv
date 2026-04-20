@@ -1,0 +1,554 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a,
+button {
+    cursor: revert;
+}
+
+ol,
+ul,
+menu,
+summary {
+    list-style: none;
+}
+
+ol {
+    counter-reset: revert;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+textarea {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: unset;
+}
+
+:where([hidden]) {
+    display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    line-break: after-white-space;
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url(../images/desktop/backgroud.webp);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 2vw 3vw;
+    z-index: 9;
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header .logo {
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 5rem;
+}
+
+header .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+header .contact img {
+    margin-left: 2vw;
+    width: 10vw;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: env(safe-area-inset-bottom, 50px);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+main .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+main .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+main .swiper .swiper-slide .slide-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+main .swiper .swiper-slide .slide-content .title-slide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 3vw;
+    margin-left: 3vw;
+}
+
+main .swiper .swiper-slide .slide-content .title-slide .imgg {
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+main .swiper .swiper-slide .slide-content .pic {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+main .swiper .swiper-slide .slide-content .pic img {
+    width: 85%;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+main .swiper-pagination-bullet-active {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #cda081 !important;
+}
+
+main .swiper-pagination-bullet {
+    opacity: unset;
+    background-color: white;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.decs-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.decs-container img {
+    width: 100%;
+}
+
+.decs-container .desc {
+    width: 57%;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.decs-container .desc p {
+    color: #fff500;
+    font-size: 1vw;
+}
+
+.decs-container .desc img {
+    width: 70% !important;
+    padding-bottom: 0.5rem;
+}
+
+.decs-container .txt-qr {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.decs-container .txt-qr img {
+    width: 60%;
+}
+
+.decs-container .qr-part {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.decs-container .qr {
+    padding: 0.5vw 0.5vw;
+    background-image: url(../images/desktop/qrcode_bg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 9.5vw !important;
+    height: 9.5vw !important;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 1vw;
+}
+
+.decs-container .qr canvas {
+    width: 8.5vw !important;
+    height: 8.5vw !important;
+    min-width: 6.5vw;
+    min-height: 6.5vw;
+    position: absolute;
+    left: 0.5vw;
+    top: 0.5vw;
+    right: 0.5vw;
+    bottom: 2.5vw;
+}
+
+.decs-container .decs-text {
+    color: white;
+    line-height: 1.5;
+}
+
+.decs-container .setup-detail {
+    font-size: 1.2vw;
+}
+
+.decs-container .download-tips {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.decs-container .download-tips .app-tips {
+    color: #e7aa9b;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.decs-container .download-tips .app-tips a {
+    display: inline-block;
+    /* margin-bottom: 0.5rem; */
+}
+
+.decs-container .download-tips .app-tips img {
+    height: 4vw;
+}
+
+.decs-container .download-tips .app-setup img {
+    width: 100%;
+}
+
+footer,
+.shadow-box {
+    display: none;
+}
+
+.spinner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-right-color: #cda081;
+    -webkit-animation: spinner-zp9dbg 1s infinite linear;
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@-webkit-keyframes spinner-zp9dbg {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1366px) {
+    main .swiper .swiper-slide .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    main .swiper .swiper-slide .slide-content .title-slide {
+        width: 90%;
+        margin-left: 0;
+        justify-content: flex-start;
+        flex: 0;
+    }
+
+    main .swiper .swiper-slide .slide-content .pic {
+        position: unset;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    body {
+        background: url(../images/mobile/backgroud.webp);
+        background-size: 100% 100%;
+        margin: 0 auto;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header .logo {
+        padding-left: 0;
+    }
+
+    header .logo img {
+        height: 3.2rem;
+        object-fit: contain;
+    }
+
+    header .contact {
+        padding-right: 0;
+    }
+
+    header .contact img {
+        margin-left: 1.2rem;
+        height: 12vw;
+        width: unset;
+    }
+
+    main .swiper .swiper-slide .slide-content {
+        position: relative;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vw;
+        box-sizing: border-box;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+
+    main .swiper .swiper-slide .slide-content .pic {
+        width: 165vw;
+        max-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .swiper .swiper-slide .slide-content .title-slide {
+        width: 100%;
+        text-align: center;
+        position: unset;
+        margin-left: 0;
+        justify-content: flex-start;
+        flex: 0;
+    }
+
+    main .swiper .swiper-slide .slide-content .title-slide .imgg {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    main .swiper .swiper-slide .slide-content .pic {
+        position: unset;
+        padding-top: 13vw;
+    }
+
+    main .swiper .swiper-slide .slide-content .pic img {
+        width: 100vw;
+        height: unset;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 2.5rem;
+        width: 100%;
+        z-index: 9;
+        display: block;
+    }
+
+    footer .setup-tips {
+        text-align: center;
+        color: #ffff;
+        font-size: 14px;
+    }
+
+    footer .setup-tips img {
+        width: 50%;
+        object-fit: contain;
+    }
+
+    footer .app {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 2vw;
+        justify-content: center;
+    }
+
+    footer .set-up-tip {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vw;
+    }
+
+    footer .set-up-tip img {
+        width: 70%;
+    }
+
+    footer .app img {
+        width: 95% !important;
+        display: block;
+        margin: auto;
+    }
+
+    .decs-container {
+        display: none;
+    }
+
+    .shadow-box {
+        position: relative;
+        z-index: 2;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 25vh;
+        background: linear-gradient(to top, black 60%, transparent);
+    }
+}
+
+/* 针对 3倍像素点 */
+@media screen and (max-width: 430px) and (max-height: 932px) and (min-resolution: 3dppx) {
+    main .swiper .swiper-slide .slide-content .title-slide {
+        margin-left: 0;
+        justify-content: flex-start;
+        flex: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header .logo img {
+        height: 3rem;
+    }
+
+    header .contact img {
+        height: 3rem;
+    }
+}

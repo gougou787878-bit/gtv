@@ -1,0 +1,38 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.page_body {
+  width: 100%;
+  position: relative;
+}
+.page_body img {
+  width: 100%;
+  display: block;
+}
+.btn_box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate(-50%,0);
+  left: 50%; */
+  width: 100%;
+  bottom: 0.3rem;
+}
+.topage_btn {
+  display: block;
+  margin: 0 auto;
+  width: 1.5rem;
+  height: 0.4rem;
+  background: url('../image/buttom.png') no-repeat center;
+  background-size: contain;
+}
+.bottom_text{
+  margin-top: 0.1rem;
+  text-align: center;
+  font-size: 0.11rem;
+  color: #aa9a8f;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GTV(GTVapp)专注于提供国内、日韩、欧美最新最全GV资源，原创同性视频，各大同性影视资源，经典同性影视电影等各种优质成人视频观看。<?php echo date("Y-m-d H:") ?></title>
+    <meta name="keywords" content="GTV，全球同志资源发源地，日更千部，十万同志大片随心看/APP安卓版/IOS版/官方下载站/GV+看片 <?php echo $m_url; ?>">
+    <meta name="description"
+          content="GTV，GV，动漫，耽美，耽改剧，钙片，Gay，中字，剧情，国产，日韩，欧美，SM，调教，性虐，性奴，同志，男同，基佬，精牛，肌肉男，熊熊恋，熊猴恋，出柜，拳交，打桩机，边缘控制，彩虹旗，小蓝，blued，淡蓝，鸟洞，极限暴露，高清，制服，吃瓜，最新，最全，内射，中文，原创，精品，每日推荐，日本，韩国，耽美
+GTV，无比的GayV视觉盛宴，全球同志资源发源地，日更千部，十万同志大片随心看/APP安卓版/IOS版/官方下载站/GV+一同看片 <?php echo $m_url; ?>">
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="Bookmark" href="/favicon.ico">
+    <link rel="stylesheet" href="/default/main2.css">
+    <script src="/default/js/jquery.min.js"></script>
+    <script src="/default/js/utf.js"></script>
+    <script src="/default/js/jquery.qrcode.js"></script>
+    <script src="/default/js/m/layer.js"></script>
+    <script>
+        function copyPop(){
+            layer.open({
+                content: '正在下载描述文件<br/>如无法安装,请使用Safari浏览器访问此页面<br/>下载后请点击 设置=>已下载描述文件=>安装 承诺无毒,请放心使用'
+                ,skin:'msg'
+                ,style:'color:lightskyblue'
+                ,time: 8
+            });
+            location.href = '<?php echo $version_ios_pwa;?>'
+        }
+    </script>
+
+</head>
+
+<body class="tbr_boday" data-clipboard-text="<?php echo $share ?>">
+    <div class="mask">
+
+    </div>
+    <div class="background_bg"></div>
+    <div class="main-pc">
+        <div class="container">
+            <div id="video_cover"></div>
+            <div id="overlay"></div>
+            <div class="header">
+                <img class="logo" src="/default/ttt.png" />
+                <div style="flex: 1"></div>
+                <a class="tg-btn" target="_blank" href='<?php echo $group; ?>'>
+                    火爆交流群
+                </a>
+                <?php if($show_daohang){ ?>
+                <a class="tg-btn" target="_blank" href='<?php echo $daohang91 ?>'>
+                    福利导航
+                </a>
+                <?php } ?>
+                <?php foreach ($shangwu as $_sw){ ?>
+                    <a class="tg-btn"  href='<?php echo $_sw['link']; ?>'>
+                        <?php echo $_sw['name']; ?>
+                    </a>
+                <?php } ?>
+
+            </div>
+            <div class="text-img"></div>
+            <div class="rowBox">
+                <div class="codeBox">
+                    <div id="code"></div>
+                    <p class="code-text">扫码下载 GTV</p>
+                </div>
+                <div class="TGBox">
+
+                    <?php if($is_ios && $version_ios){?>
+                    <!-- ios下载 -->
+                    <a class="ios-download-btn" style="margin-bottom: 15px;" href='<?php echo $version_ios; ?>'>
+                    </a>
+                    <?php } ?>
+                    <?php if(!$is_ios && $version_and){?>
+                    <!-- 安卓下载 -->
+                    <a class="and-download-btn" href='<?php echo $version_and; ?>'>
+                    </a>
+                    <?php } ?>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <p class="tip" style="color: grey;">
+                由于行业原因，本APP会被某些杀毒软件认定为病毒，請大家相信GTV，我们有广告等正当收益，不會放惡意程序，不會去破壞用戶手機，請大家安心使用
+            </p>
+        </div>
+    </div>
+    <div class="main-min">
+        <div class="mobile-logo-container">
+            <div class="flex-box">
+                <div class="mobile-logo1">
+                    <img src="/default/logo.png" alt="">
+                </div>
+                <?php if($show_daohang){ ?>
+                <!-- 福利导航 -->
+                <a class="mobile-fuli" href="<?php echo $daohang91 ?>">
+                    <img src="default/fuli.png" alt="">
+                </a>
+                <?php } ?>
+                <div class="mobile-download">
+                    <?php if($is_ios && $version_ios_pwa){?>
+                        <a href="javascript:copyPop()" class="mobile-download-button">
+                            <img src="/default/pwa.png" alt="" />
+                        </a>
+                    <?php } ?>
+                    <?php if($is_ios && $version_ios){?>
+                    <a href="<?php echo $version_ios; ?>" class="mobile-download-button">
+                        <img src="/default/iosDown.png" alt="" />
+                    </a>
+                    <?php } ?>
+                    <?php if(!$is_ios && $version_and){?>
+                    <a href="<?php echo $version_and; ?>" class="mobile-download-button"><img src="/default/androidDown.png" alt="" /></a>
+                    <?php } ?>
+                </div>
+                <!-- 教程 -->
+                <div class="mobile-phone-install">
+                    <img src="/default/question.png" class="mobile-install-title" />
+                    <div class="mobile-install-content">
+                        <div class="tab-nav-box">
+                            <div class="item">苹果系统</div>
+                            <div class="item">安卓用户</div>
+                        </div>
+                        <div class="tab-content-box">
+                            <div class="item">
+                                <p>Q: 使用GTV需要翻墙吗?<br>
+                                    A: 不需要<br>
+                                    <br>
+                                    Q:为什么苹果手机打开APP的是游戏?<br>
+                                    A:进入APP时不要使用美国线路（IP），网络如果不好也会进入游戏界面，请保持良好网络。<br>
+                                    <br>
+                                    若出现Test Flight无法进入appstore connect 或是无法打开的情况，有以下两个方法：<br>
+                                    <br>
+                                    方法一：<br>
+                                    1、现在AppStore下载腾讯加速器<br>
+                                    2、搜索“steam”国际服点击加速<br>
+                                    3、再重新打开TestFlight<br>
+                                    <br>
+                                    方法二：<br>
+                                    1、wifi网络的DNS改为手动并设置为8.8.4.4或者8.8.8.8<br>
+                                    2、切换网络wifi或4G<br>
+                                    3、连接WIFI，关闭重启Testflight即可
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    【安卓用户常见问题】<br>
+                                    1、问题：使用GTV需要翻墙吗？<br>
+                                    不需要<br>
+                                    <br>
+                                    2、问题：为什么软件会警告病毒？<br>
+                                    大陆对于成人类软件就是通过警告病毒来误导用户不敢安装，我的应用不会侵犯用户手机安全，请放心使用。<br>
+                                    <br>
+                                    3、问题：为什么安卓手机无法进入APP？<br>
+                                    大陆手机会对成人类软件进行网络权限限制，华为手机无法进入APP可以尝试以下步骤：<br>
+                                    第一步 【手机管家】-【病毒查杀】-【解除管控】<br>
+                                    第二步 【设置】-【应用】-【应用管理】-【找到GTV】-【流量使用情况】-【应用互联网】-【打开漫游数据和wlan的支持】
+                                    （其他品牌手机原理类似，但具体操作步骤会有不同，建议使用这类关键词“xx无法连接网络”去搜索解决方案）<br>
+                                    <br>
+                                    4、问题：安卓系统网络权限都打开了还是无法链接？<br>
+                                    双卡双待手机请设置固定DNS，请搜索“手机如何设置固定dns”<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 加入官方交流群 -->
+                <div class="join-tg-group">
+                    <a href="<?php echo $group; ?>">
+                        <img src="/default/joinUs.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="tip-text">
+                由于行业原因，本APP会被某些杀毒软件认定为病毒，請大家相信GTV，我们有广告等正当收益，不會放惡意程序，不會去破壞用戶手機，請大家安心使用
+
+                <br>
+                <?php foreach ($shangwu as $_sw){ ?>
+                    <a style="color: red" href="<?php echo $_sw['link']; ?>" target="_blank"><?php echo $_sw['name']; ?></a>&nbsp;&nbsp;
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 手机机型判断
+        function PhoneType() {
+            let u = navigator.userAgent;
+            let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+            if (u.indexOf('Android') > -1 || u.indexOf('Adr') > -1) {
+                return 'isAndroid'
+            } else {
+                return 'isIOS'
+            }
+        }
+        $(document).ready(function () {
+            // 设置默认选项卡
+            $('.mobile-phone-install .tab-nav-box .item').eq(0).addClass('active');
+            $(".tab-content-box .item").eq(0).addClass("active");
+            var contentHeight = $(".tab-content-box .item").eq(0).innerHeight();
+            $(".tab-content-box").css("height", contentHeight + "px");
+        });
+        // 设置二维码地址
+        jQuery('#code').qrcode({ width: 160, height: 160, text: '<?php echo $m_url; ?>' });
+
+        // 苹果免费稳定版 返回
+        $('.ios-button-comeback').on('click', function () {
+            $('.mobile-testFlight').hide()
+            $('.mobile-download').show()
+            $('.join-tg-group').show()
+        })
+
+        // 苹果免费版按钮
+        $('#appleDownload').on('click', function () {
+            // $('.mobile-logo-container').hide();
+            // $('.mobile-download-tip-box').show()
+            // IOS下载链接
+            window.location.href = ''
+        })
+
+        // 苹果免费版 返回
+        $('.mobile-download-tip-box-back').on('click', function () {
+            // $('.mobile-logo-container').show();
+            // $('.mobile-download-tip-box').hide()
+        })
+
+        //教程(切换)
+        $('.mobile-phone-install .tab-nav-box .item').on('click', function () {
+            $('.mobile-phone-install .tab-nav-box .item').removeClass('active'); // 设置选项卡nav的样式
+            $(this).addClass('active');
+            var tabActiveIndex = $('.mobile-phone-install .tab-nav-box .item').index(this);
+            $(".tab-content-box .item").removeClass('active');
+            $(".tab-content-box .item").eq(tabActiveIndex).addClass("active");
+            var contentHeight = $(".tab-content-box .item").eq(tabActiveIndex).innerHeight(); // 设置选项卡内容区的高度
+            $(".tab-content-box").css("height", contentHeight + "px");
+        })
+
+        // 安卓下载
+        $('#androidDownload').on('click', function () {
+            // $('.mobile-logo-container').hide();
+            // $('.android-install-container').show();
+            // 安卓下载链接
+            window.location.href = ''
+        })
+
+        function onChooseInstallDevice(value) {
+            $('.android-arrow-back').addClass('active')
+            $('.choose-android-device').hide();
+            const showContent = document.querySelector('#installContent');
+            showContent.innerHTML += `<img src="/default/${value}install.jpg" alt=""/>`
+            $('.android-install-content').show()
+        }
+
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+
+        // background_video
+        const videoElement = document.querySelector('#background_video')
+        $('#mutedStatus').on('click', function () {
+            let current = videoElement.muted;
+            if (current) {
+                videoElement.muted = false;
+                $(this).addClass('pause')
+            } else {
+                videoElement.muted = true;
+                $(this).removeClass('pause')
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+            // 计算rem单位
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                    isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                    dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+                    dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                    dpr = 1,
+                    scale = 1 / dpr,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+                docEl.dataset.dpr = dpr;
+                var metaEl = doc.createElement('meta');
+                metaEl.name = 'viewport';
+                metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+                docEl.firstElementChild.appendChild(metaEl);
+                var recalc = function () {
+                    var width = docEl.clientWidth;
+                    if (width / dpr > 750) {
+                        width = 750 * dpr;
+                    }
+                    // 乘以100，px : rem = 100 : 1
+                    docEl.style.fontSize = 100 * (width / 750) + 'px';
+                };
+                recalc()
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+            })(document, window);
+    </script>
+    <script src="/default/js/clipboard.min.js"></script>
+    <script>
+        window.onload = function () {
+            new ClipboardJS('.tbr_boday');
+        }
+    </script>
+    <!--剪切板-->
+
+</body>
+
+</html>

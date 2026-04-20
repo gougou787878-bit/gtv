@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小红书</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" type="text/css" href="/lib/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/base.css?v=1.0.0.1" />
+
+    <link rel="stylesheet" type="text/css" href="/dist/css/index.css?v=1.0.0.1" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/androidModal.css" />
+    <link rel="icon" href="./images/logo.png" />
+  </head>
+
+  <body>
+    <div id="app" class="home">
+      <!-- header start -->
+      <header class="header">
+        <h1 class="logo_container">
+          <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
+          <div class="logo_right">
+            <strong>小红书</strong><span>性福生活指南</span>
+          </div>
+        </h1>
+
+        <div class="h5_contacts">
+          <a class="business" href="javascript:;" id="business">
+            <img src="./images/h5/business.png" alt="business" />
+          </a>
+          <a class="tg" href="javascript:;" id="contact"
+            ><img src="./images/h5/tg.png" alt="tg"
+          /></a>
+        </div>
+        <div class="pc_contacts">
+          <a class="business" href="javascript:;" id="business">
+            <img src="./images/pc/business.png" alt="business" />
+          </a>
+          <a class="group" href="javascript:;" id="contact">
+            <img src="./images/pc/group.png" alt="group" />
+          </a>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- 内容区 start -->
+      <div class="h5_content">
+        <div class="ads"><img src="./images/h5/ads.png" alt="ads" /></div>
+        <div class="btn_group">
+          <a
+            class="ios_download btn_download"
+            href="/pages/ios.html"
+            id="iphone"
+          >
+            <img src="./images/ios_download.png" alt="ios_download" />
+          </a>
+          <a
+            class="android_download btn_download clipboard-btn"
+            href="javascript:;"
+            id="android1"
+            data-type="1"
+          >
+            <img src="./images/android_download.png" alt="android_download" />
+          </a>
+          <a
+            class="android_back_download btn_download clipboard-btn"
+            href="javascript:;"
+            id="android2"
+            data-type="1"
+          >
+            <img
+              src="./images/android_back_download.png"
+              alt="android_back_download"
+            />
+          </a>
+        </div>
+
+        <div class="tips setup-tips">
+          <span>安卓安装包爆毒解决方案</span>
+          <span>*下载后开启飞行模式安装*</span>
+        </div>
+      </div>
+      <div class="pc_content">
+        <div class="left">
+          <div class="slogan">
+            <img src="./images/pc/slogan.png" alt="slogan" />
+          </div>
+
+          <div class="app_info">
+            <div class="qrcode_container">
+              <div id="qrcode"></div>
+              <span>扫描下载入口</span>
+            </div>
+
+            <div class="btn_group">
+              <a
+                class="ios_download btn_download"
+                href="/pages/ios.html"
+                id="iphone-web"
+              >
+                <img src="./images/ios_download.png" alt="ios_download" />
+              </a>
+              <a
+                class="android_download btn_download clipboard-btn"
+                href="javascript:;"
+                id="android-web"
+              >
+                <img
+                  src="./images/android_download.png"
+                  alt="android_download"
+                />
+              </a>
+
+              <p class="tip">
+                由于行业特殊性，本APP可能会被某些杀毒软件认定为病毒，请大家放心下载使用，本APP已有广告和会员收益，安装本APP不会对您的手机造成任何损害。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="ads"><img src="./images/pc/ads.png" alt="ads" /></div>
+        </div>
+      </div>
+      <!-- 内容区 end -->
+
+      <div class="spinner-container">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="android-modal" id="platform-list">
+        <div class="header">
+          <div class="android-modal-arrow" data-type="1">
+            <img src="/images/modal/back-black.webp" alt="" />
+          </div>
+          <div class="title" id="show-platform-tips">
+            <img src="/images/h5/tips_1.webp" alt="" />
+          </div>
+          <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content">
+          <div
+            class="platform-item"
+            data-src="/images/modal//cell1-detail.webp"
+          >
+            <img src="/images/modal/cell1.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell2-detail.webp">
+            <img src="/images/modal/cell2.webp" alt="" />
+          </div>
+          <div
+            class="platform-item"
+            data-src="/images/modal/cell3-detail1.webp"
+            data-src2="/images/modal/cell3-detail2.webp"
+          >
+            <img src="/images/modal/cell3.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell4-detail.webp">
+            <img src="/images/modal/cell4.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell5-detail.webp">
+            <img src="/images/modal/cell5.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell6-detail.webp">
+            <img src="/images/modal/cell6.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell7-detail.webp">
+            <img src="/images/modal/cell7.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell8-detail.webp">
+            <img src="/images/modal/cell8.webp" alt="" />
+          </div>
+          <div class="platform-item" data-src="/images/modal/cell9-detail.webp">
+            <img src="/images/modal/cell9.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="android-modal two" id="platform-detail">
+        <div class="header">
+          <div class="android-modal-arrow" data-type="2">
+            <img src="/images/modal/back-black.webp" alt="" />
+          </div>
+          <div class="title">
+            <img src="/images/h5/tips_1.webp" alt="" />
+          </div>
+          <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content">
+          <img class="modal-common-img" alt="" />
+          <img class="modal-common-img-2" alt="" />
+        </div>
+      </div>
+      <div class="android-modal two" id="ios-detail">
+        <div class="header">
+          <div class="android-modal-arrow" data-type="3">
+            <img src="/images/modal/back-black.webp" alt="" />
+          </div>
+          <div class="title">
+            <img src="/images/h5/tips_2.webp" alt="" />
+          </div>
+          <div>&nbsp;&nbsp;</div>
+        </div>
+        <div class="content">
+          <img class="modal-common-img" src="/images/modal/doc-ios-1.webp" />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="/lib/js/qrcode.js"></script>
+    <script src="/lib/js/layer.js"></script>
+    <script type="text/javascript" src="/lib/js/crypto.js"></script>
+    <script nomodule>
+      var s = document.createElement("script");
+      s.src = "/lib/js/polyfill.js";
+      document.head.appendChild(s);
+    </script>
+
+    <script src="/dist/js/utils.js"></script>
+    <script src="/dist/js/index.js?v=1.0.0.3"></script>
+  </body>
+</html>

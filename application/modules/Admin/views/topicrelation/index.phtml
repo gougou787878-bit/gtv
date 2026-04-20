@@ -1,0 +1,92 @@
+<?php
+importView("header.phtml"); ?>
+    <body>
+
+<!-- 页面加载loading -->
+<div class="page-loading">
+    <div class="ball-loader">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+
+<style>.layui-form.form-dialog .layui-input-block {
+        margin-right: 30px
+    }</style>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header" >剧集<span style="color: orangered"><?php echo (int)($_GET['_tpid']??0);?></span>#视频</div>
+                <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+                </div>
+                <div class="layui-card-body">
+                    <table class="layui-hide" id="gridTab" lay-filter="table-toolbar"></table>
+                    <script type="text/html" id="toolbar">
+                        <div class="layui-btn-container">
+
+                        </div>
+                    </script>
+                    <script type="text/html" id="operate-toolbar">
+                        <a class="layui-btn layui-btn-danger layui-btn-xs" data-pk="{{=d.id}}" lay-event="del">
+                            <i class="layui-icon layui-icon-delete"></i>移除</a>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    <?php
+    $w = [];
+    if(isset($_GET['_tpid']) && $_GET['_tpid']){
+        $w['where[topic_id]'] = (int)$_GET['_tpid'];
+    }
+    ?>
+    xx.use({
+        url: '<?php echo url_backend("listAjax",$w) ?>',
+        saveUrl: '<?php echo url_backend("save") ?>',
+        delUrl: '<?php echo url_backend("del") ?>',
+        delALlUrl: undefined,
+        uploadUrl: undefined,
+        title: '数据表',
+        pk: 'id',
+        cols: [[
+            {field: 'id', title: 'ID',width:80,sort:true}
+            ,{field: 'topic_title', title: '剧集'}
+            , {
+                field: 'cover_thumb', title: '封面', width: 130, templet: function (d) {
+                    if(d.cover_thumb){
+                        return '<img src="' + d.cover_thumb_url + '" style="width: 100px;height: 80px;" onclick="show_img(\'' + d.cover_thumb_url + '\')">';
+                    }else{
+                        return '--';
+                    }
+                }
+            }
+            , {field: 'title', title: '标题', width: 180 ,templet:'#cover-title'}
+            , {
+                field: 'href', title: '播放源', width: 100, templet: function (d) {
+                    let html = "<a class='layui-btn layui-btn-sm layui-btn-xs' onclick=\"previewVideo('" + d.href + "')\"><i class='layui-icon layui-icon-play'></i>线路1</a><br><br>"
+                    html += "<a class='layui-btn layui-btn-sm layui-btn-xs' onclick=\"previewVideo('" + d.href_backup + "')\"><i class='layui-icon layui-icon-play'></i>线路2</a>"
+                    return html
+                }
+            }
+            , {field: 'uid', title: '上传用户',templet:'#user-text'}
+
+            , {
+                field: 'coins', title: '金币', width: 80,edit:true,templet: function (d) {
+                    return '<span style="font-weight: bolder;color: red">' + d.coins + '</span>';
+                }
+            }
+
+            , {field: 'like', title: '点赞',sort:true}
+            , {field: 'count_pay', title: '购买数',sort:true}
+            , {field: 'is_hide', title: '展示',type: "switch", value: "0|1", edit: true}
+
+
+        ]]
+    });
+</script>
+<?php echo \Layui::renderJs() ?><?php importView("fooler.phtml"); ?>
