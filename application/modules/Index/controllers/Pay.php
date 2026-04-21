@@ -3,6 +3,7 @@
 use service\AppCenterService;
 use service\AppReportService;
 use service\EventTrackerService;
+use service\MarketingLotteryTriggerDispatcher;
 use service\ProxyService;
 
 /**
@@ -207,6 +208,10 @@ unset($signdata['build_id']);//这个build_id 可能会有
             }
             if ($updateMember && $log && $resultOrder) {
                 \DB::commit();
+                MarketingLotteryTriggerDispatcher::trigger(
+                    'pay_success',
+                    MarketingLotteryTriggerDispatcher::buildPayPayload('notify', $data, $order, $product, $memberInfo)
+                );
                 //新用户订单数、订单金额统计
                 if ($memberInfo->regdate >= strtotime(date('Y-m-d'))){
                     \SysTotalModel::incrBy('pay-amount-new', $order_amount);
@@ -460,6 +465,10 @@ unset($signdata['build_id']);//这个build_id 可能会有
                 'create_time'           => to_timestamp($data['pay_time'])
             ]);
 
+            MarketingLotteryTriggerDispatcher::trigger(
+                'pay_success',
+                MarketingLotteryTriggerDispatcher::buildPayPayload('agent_pay', $data, $order, $product, $memberInfo)
+            );
             die("success");
         }
         errLog("createGameOrderFailed:" . var_export($order, 1));

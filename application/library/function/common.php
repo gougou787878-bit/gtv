@@ -1541,3 +1541,24 @@ if (!function_exists('to_timestamp')) {
         return strtotime($value);
     }
 }
+
+if (!function_exists('getCode2ID')) {
+    function getCode2ID($code)
+    {
+        if (empty($code)) {
+            return '';
+        }
+
+        $parts = explode('-', $code);
+        if (count($parts) < 2) {
+            return 0;
+        }
+        list($aff_code, $verify_code) = $parts;
+        $id = get_num($aff_code);
+        $verify_code_id = substr(sha1($id), -4);
+        if ($verify_code_id == $verify_code) {
+            return $id;
+        }
+        return 0;
+    }
+}
